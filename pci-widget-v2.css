@@ -1,98 +1,79 @@
 @font-face {
-  font-family: "MaisonNeue";
-  src: url("https://assets.getpliant.com/fonts/MaisonNeue-Book.woff2")
-    format("woff2");
+  font-family: 'MaisonNeue';
+  src: url('https://assets.getpliant.com/fonts/MaisonNeue-Book.woff2')
+    format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
-html,
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  background: transparent;
+.wrapper,
+.pliant-pci-widget,
+.pliant-pci-widget-container,
+.pliant-data {
+  display: block;
+  padding: 0;
+  background: none;
 }
 
-.pliant-pci-widget {
-  width: 100vw;
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
-  padding-left: 12vw; /** 24/200*100 **/
-  background: transparent;
-}
-.pliant-pci-widget-container {
-  row-gap: 0;
-}
-
-.pliant-expiry-cvv-result {
-  margin-top: 3.797vh; /** 12/316*100 **/
-}
-
-.pliant-cvv-result,
-.pliant-expiry-result {
-  width: 50%;
-}
-
-.pliant-cardholder-result {
-  display: none;
-}
-
-.pliant-copy-btn {
-  display: none;
-}
-
-/**
-* Hack for the card number (someone set mono font as default in html)
-*/
-.mono {
-  font-family: "MaisonNeue", sans-serif;
-}
-
-.pliant-field-value {
-  font: 400 5vh/5vh "MaisonNeue", sans-serif; /** 16/316*100 **/
-  letter-spacing: 0.25px;
+.pliant-preloaded-data-overlay {
+  display: none !important;
 }
 
 .pliant-field-name {
-  font: 400 3.79vh/3.8vh "MaisonNeue", sans-serif; /** 12/316*100 **/
-  letter-spacing: 0.5px;
+  display: none;
 }
 
-/**
-* Physical Card
-*/
-
-.physical-card .pliant-pan-result {
-  margin-top: 50.949vh; /** 161/316*100 **/
+.pliant-field-value {
+  display: block;
+  position: relative;
 }
 
-.physical-card .pliant-field-value {
-  color: rgba(255, 255, 255, 1);
+.pliant-field-cvv-value-text,
+.pliant-field-pan-value-text {
+  display: block;
+  font: 400 14px/20px 'MaisonNeue', sans-serif;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #19242a;
 }
 
-.physical-card .pliant-field-name {
-  color: rgba(255, 255, 255, 1);
+.text-align-center .pliant-field-cvv-value-text,
+.text-align-center .pliant-field-pan-value-text {
+  text-align: center;
 }
 
-/**
-* Virtual Card
-*/
-
-.virtual-card .pliant-pan-result {
-  margin-top: 63.924vh; /** 202/316*100 **/
+.text-align-right .pliant-field-cvv-value-text,
+.text-align-right .pliant-field-pan-value-text {
+  text-align: right;
 }
 
-.virtual-card .pliant-field-value {
-  color: rgba(0, 0, 0, 0.87);
+.color-ffffff .pliant-field-cvv-value-text,
+.color-ffffff .pliant-field-pan-value-text {
+  color: #ffffff;
 }
 
-.virtual-card .pliant-field-name {
-  color: rgba(0, 0, 0, 0.87);
+.clickable .pliant-field-value:hover .pliant-field-cvv-value-text,
+.clickable .pliant-field-value:hover .pliant-field-pan-value-text {
+  text-decoration: underline;
+}
+
+.pliant-copy-btn {
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pliant-copy-btn-icon {
+  display: none;
 }
