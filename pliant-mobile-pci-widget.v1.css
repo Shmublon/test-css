@@ -20,12 +20,13 @@ body {
 }
 
 .pliant-pci-widget {
-  width: 100vw;
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
-  padding-left: 12vw; /** 24/200*100 **/
-  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 12vw; /** 24/200*100 **/
+  /* ➡️ ИЗМЕНЕНИЕ: ВРЕМЕННО УСТАНАВЛИВАЕМ ЯРКИЙ ФОН */
+  background: #FF0000 !important; /* ЯРКО-КРАСНЫЙ ФОН */
 }
 .pliant-pci-widget-container {
   row-gap: 0;
