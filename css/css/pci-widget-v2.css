@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('https://assets.getpliant.com/fonts/MaisonNeue-Book.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper,
+.pliant-pci-widget,
+.pliant-pci-widget-container,
+.pliant-data {
+  display: block;
+  padding: 0;
+  background: none;
+}
+
+.pliant-preloaded-data-overlay {
+  display: none !important;
+}
+
+.pliant-field-name {
+  display: none;
+}
+
+.pliant-field-value {
+  display: block;
+  position: relative;
+}
+
+.pliant-field-cvv-value-text,
+.pliant-field-pan-value-text {
+  display: block;
+  font: 400 14px/20px 'MaisonNeue', sans-serif;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #19242a;
+}
+
+.text-align-center .pliant-field-cvv-value-text,
+.text-align-center .pliant-field-pan-value-text {
+  text-align: center;
+}
+
+.text-align-right .pliant-field-cvv-value-text,
+.text-align-right .pliant-field-pan-value-text {
+  text-align: right;
+}
+
+.color-ffffff .pliant-field-cvv-value-text,
+.color-ffffff .pliant-field-pan-value-text {
+  color: #ffffff;
+}
+
+.clickable .pliant-field-value:hover .pliant-field-cvv-value-text,
+.clickable .pliant-field-value:hover .pliant-field-pan-value-text {
+  text-decoration: underline;
+}
+
+.pliant-copy-btn {
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pliant-copy-btn-icon {
+  display: none;
+}
