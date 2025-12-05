@@ -26,6 +26,10 @@ body {
   margin: 0px;
   padding-left: 12vw; /** 24/200*100 **/
   background: transparent;
+
+  /* 🚩🚩🚩 ДОБАВЬТЕ ЭТО ДЛЯ ТЕСТИРОВАНИЯ! 🚩🚩🚩 */
+  border: 5px solid red !important; /* Толстая красная рамка */
+  background-color: yellow !important; /* Желтый фон для виджета */
 }
 .pliant-pci-widget-container {
   row-gap: 0;
