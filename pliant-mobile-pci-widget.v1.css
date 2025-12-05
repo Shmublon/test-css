@@ -45,9 +45,9 @@ body {
   display: none;
 }
 
-/* .pliant-copy-btn {
+.pliant-copy-btn {
   display: none;
-} */
+}
 
 /**
 * Hack for the card number (someone set mono font as default in html)
