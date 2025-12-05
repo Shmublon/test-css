@@ -40,13 +40,13 @@ body {
   width: 50%;
 }
 
-.pliant-cardholder-result {
+/* .pliant-cardholder-result {
   display: none;
 }
 
 .pliant-copy-btn {
   display: none;
-}
+} */
 
 /**
 * Hack for the card number (someone set mono font as default in html)
